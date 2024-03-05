@@ -260,6 +260,10 @@
                 background-color: rgb(197, 116, 116);
                 max-width: 1200px;
                 margin: auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
             }
             
             .product-grid {
@@ -280,6 +284,7 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 border-radius: 10px;
                 transition: transform 0.3s ease-in-out;
+                width: 280px;
             }
             
             .product-card:hover {
@@ -295,6 +300,7 @@
                 max-height: 200px;
                 /* Set a maximum height as needed */
                 height: auto;
+                object-fit: cover;
             }
             
             .product-card h3 {
