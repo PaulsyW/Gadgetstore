@@ -262,6 +262,7 @@
                 align-items: horizontal;
                 display: horizontal;
                 background-color: rgb(197, 116, 116);
+                display: inline-block;
             }
             
             .product-grid {
@@ -269,6 +270,7 @@
                 ;
                 justify-content: space-around;
                 flex-wrap: wrap;
+                display: inline-block;
                 /* Allow wrapping to the next row */
             }
             
