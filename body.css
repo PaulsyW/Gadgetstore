@@ -257,12 +257,9 @@
             }
             
             .featured-products {
-                /* padding: 20px;
-    position: fixed; */
-                align-items: horizontal;
-                display: horizontal;
                 background-color: rgb(197, 116, 116);
-                display: inline-block;
+                max-width: 1200px;
+                margin: auto;
             }
             
             .product-grid {
