@@ -43,10 +43,20 @@
             
             .icons {
                 display: flex;
+                align-items: flex-end;
+                padding: 10px 10px;
+                /* min-height: 10px;
+                min-width: 10px; */
+            }
+            
+            .icons span {
+                margin: 10px 10px;
+                cursor: pointer;
             }
             
             .search-icon {
                 position: relative;
+                min-height: 1px;
             }
             
             .search-icon i {
