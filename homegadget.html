@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Gadgets Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .gadget-card {
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .gadget-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .gadget-name,
+        .gadget-price {
+            margin: 10px 0;
+        }
+    </style>
+    <header>
+        <h1>Home Gadgets</h1>
+        <nav>
+            <a href="#!">Home</a>
+            <!-- Additional navigation links can go here -->
+        </nav>
+    </header>
+
+    <main id="gadget-container">
+        <!-- Gadgets will be displayed dynamically here -->
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gadgets = [{
+                    name: "Smart Speaker",
+                    price: "$99",
+                    imageUrl: "images/smart-speaker.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                }, {
+                    name: "Robot Vacuum",
+                    price: "$299",
+                    imageUrl: "images/robot-vacuum.jpg"
+                },
+                // Add more gadgets here
+            ];
+
+            const container = document.getElementById('gadget-container');
+
+            gadgets.forEach(gadget => {
+                const card = document.createElement('div');
+                card.className = 'gadget-card';
+
+                const image = document.createElement('img');
+                image.src = gadget.imageUrl;
+                image.alt = gadget.name;
+                image.className = 'gadget-image';
+
+                const name = document.createElement('h2');
+                name.textContent = gadget.name;
+
+                const price = document.createElement('p');
+                price.textContent = gadget.price;
+
+                card.appendChild(image);
+                card.appendChild(name);
+                card.appendChild(price);
+
+                container.appendChild(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

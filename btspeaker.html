@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluetooth Speakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bluetooth Speakers</h1>
+    </header>
+
+    <section id="speakers-gallery">
+        <!-- Speaker items will be added here dynamically -->
+    </section>
+    <style>
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #004d99;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #speakers-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        
+        .speaker-card {
+            width: calc(33.333% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .speaker-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .speaker-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .speaker-card {
+                width: calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .speaker-card {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const speakers = [{
+                    name: "JBL Flip 5",
+                    price: "$119.95",
+                    imageUrl: "images/jbl-flip5.jpg",
+                    description: "Portable Waterproof Speaker."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                }, {
+                    name: "Bose SoundLink",
+                    price: "$129.00",
+                    imageUrl: "images/bose-soundlink.jpg",
+                    description: "Bluetooth Speaker III."
+                },
+                // Add more speakers here
+            ];
+
+            const gallery = document.getElementById('speakers-gallery');
+
+            speakers.forEach(speaker => {
+                const card = document.createElement('div');
+                card.className = 'speaker-card';
+
+                const imageDiv = document.createElement('div');
+                imageDiv.className = 'speaker-image';
+                const image = document.createElement('img');
+                image.src = speaker.imageUrl;
+                image.alt = speaker.name;
+                imageDiv.appendChild(image);
+
+                const infoDiv = document.createElement('div');
+                infoDiv.className = 'speaker-info';
+                const name = document.createElement('h2');
+                name.textContent = speaker.name;
+                const price = document.createElement('p');
+                price.textContent = speaker.price;
+                const description = document.createElement('p');
+                description.textContent = speaker.description;
+
+                infoDiv.appendChild(name);
+                infoDiv.appendChild(price);
+                infoDiv.appendChild(description);
+
+                card.appendChild(imageDiv);
+                card.appendChild(infoDiv);
+
+                gallery.appendChild(card);
+            });
+        });
+    </script>
+
+    /body> /html>
