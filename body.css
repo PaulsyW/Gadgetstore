@@ -294,7 +294,7 @@
         }
         
         .featured-products {
-            background-color: rgb(197, 116, 116);
+            background-color: rgb(117, 84, 200);
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
@@ -366,7 +366,7 @@
         .product-card .buy-button {
             display: inline-block;
             padding: 8px 15px;
-            background-color: #333;
+            background-color: #b0da09;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -374,7 +374,7 @@
         }
         
         .product-card .buy-button:hover {
-            background-color: #555;
+            background-color: #1e5608;
         }
         
         .feature-content {

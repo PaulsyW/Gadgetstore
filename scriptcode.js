@@ -4,9 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const watches = [
         { name: "Rolex", price: "$5000", imageUrl: "path/to/rolex.jpg" },
+
         { name: "Omega", price: "$3000", imageUrl: "path/to/omega.jpg" },
         { name: "Tag Heuer", price: "$2000", imageUrl: "path/to/tagheuer.jpg" },
-        // Add more watch brands and their details here
+        // Add more watch brands and their details here var img = document.createElement('img');
+
+        // // Set the source attribute to the URL of the image
+        // img.src = './; // Replace '
+        // path / to / your / image.jpg ' with the actual path to your image
+
+        // // You can also set other attributes if needed, e.g., alt text, width, height, etc.
+        // img.alt = 'Description of the image'; // Optional: alt text for accessibility
+
+        // // Attach the image element to a container in the document
+        // var container = document.getElementById('image-container');
+        // container.appendChild(img);
     ];
 
     const container = document.getElementById('watch-container');
